@@ -1,7 +1,5 @@
+import { HomeComponent } from "@/src/components/home/homeComponent"
 import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
-import styles from "@/styles/Home.module.css"
 
 export default function Home({ data }) {
   return (
@@ -12,29 +10,7 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <nav>
-          {/* <Image /> */}
-          <Link href="/">Home</Link>
-          <Link href="/events">Events</Link>
-          <Link href="/about-us">About us</Link>
-        </nav>
-      </header>
-
-      <main className={styles.main}>
-        {data.map((event) => (
-          <Link href={`/events/${event.id}`} key={event.id}>
-            <Image
-              src={event.image}
-              width={200}
-              height={100}
-              alt={event.title}
-            />
-            <h2>{event.title}</h2>
-            <p>{event.description}</p>
-          </Link>
-        ))}
-      </main>
+      <HomeComponent data={data} />
     </>
   )
 }

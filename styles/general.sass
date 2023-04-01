@@ -5,13 +5,15 @@ header
   height: 110px
   background: linear-gradient(305deg, #dbfff3, transparent)
   padding: 15px 30px
+  display: flex
+  align-items: center
 
   >div
     width: 100%
     max-width: 1250px
     margin: auto
     display: flex
-    flex-direction: column
+    flex-direction: row
     justify-content: space-between
   .title
     width: 50%
@@ -20,7 +22,7 @@ header
   .topNav
     display: flex
     justify-content: space-between
-    align-content: center
+    align-items: center
     ul
       display: flex
       text-decoration: none
@@ -41,7 +43,7 @@ main
   max-width: 1250px
   margin: auto
   padding: 80px 30px
-  min-height: 550px
+  min-height: 778px
 
 .home_body
   display: flex
@@ -69,9 +71,11 @@ main
 .events_page
   display: flex
   flex-direction: row
-  gap: 20px
+  gap: 40px
+  justify-content: center
   .card
     position: relative
+    margin: 0
     h2
       position: absolute
       width: 100%
@@ -79,6 +83,7 @@ main
       text-align: center
       font-size: 38px
       color: white
+      margin: 0
       text-transform: uppercase
       text-shadow: 1px 1px 20px black
 
@@ -106,6 +111,7 @@ main
       font-weight: 800
       text-transform: uppercase
       margin-top: 25px
+      color: #2ECC71
     input
       height: 40px
       min-width: 350px
@@ -122,8 +128,8 @@ main
       text-transform: uppercase
       margin-left: 10px
       font-weight: 600
-      background: #dcfff3
+      background: #58D68D
       cursor: pointer
       &:hover
-        color: #dcfff3
+        color: #58D68D
         background: #333

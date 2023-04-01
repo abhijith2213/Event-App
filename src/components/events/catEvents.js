@@ -12,7 +12,7 @@ export const CatEvents = ({ data, pageName }) => {
             key={event.id}
             passHref
           >
-            <span className="card">
+            <div className="card">
               <Image
                 src={event.image}
                 width={500}
@@ -21,7 +21,7 @@ export const CatEvents = ({ data, pageName }) => {
               />
               <h2>{event.title}</h2>
               <p>{event.description}</p>
-            </span>
+            </div>
           </Link>
         ))}
       </div>

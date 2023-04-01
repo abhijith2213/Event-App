@@ -1,7 +1,6 @@
 import { SingleEvents } from "@/src/components/events/singleEvent"
 
 const SingleEvent = ({ data }) => {
-  console.log(data)
   return <SingleEvents data={data} />
 }
 

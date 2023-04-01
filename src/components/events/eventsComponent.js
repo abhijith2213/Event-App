@@ -6,7 +6,7 @@ export const EventsComponent = ({ data }) => {
     <div className="events_page">
       {data.map((event) => (
         <Link href={`/events/${event.id}`} key={event.id}>
-          <span className="card">
+          <div className="card">
             <Image
               src={event.image}
               alt={event.title}
@@ -14,7 +14,7 @@ export const EventsComponent = ({ data }) => {
               height={300}
             />
             <h2>{event.title}</h2>
-          </span>
+          </div>
         </Link>
       ))}
     </div>
